@@ -1,4 +1,3 @@
-
 pub fn solve(input: &str) -> (i32, i32) {
     (solve_part1(input), solve_part2(input))
 }

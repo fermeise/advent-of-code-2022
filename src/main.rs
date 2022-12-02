@@ -1,6 +1,10 @@
 mod day1;
+mod day2;
 
 extern crate itertools;
+
+#[macro_use]
+extern crate scan_fmt;
 
 use std::fs::File;
 use std::io::Read;
@@ -15,6 +19,7 @@ fn main() -> std::io::Result<()> {
 
     match day {
         1 => println!("{:?}", day1::solve(&input)),
+        2 => println!("{:?}", day2::solve(&input)),
         _ => eprintln!("invalid day: {}", day),
     }
     Ok(())
